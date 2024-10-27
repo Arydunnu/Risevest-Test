@@ -44,23 +44,16 @@ Copy code
 // For Chrome
 WebDriver driver = new ChromeDriver();
 
-// For Firefox
-WebDriver driver = new FirefoxDriver();
-Or, configure this using TestNG parameters for flexible browser selection.
-
-# Reporting
-After the tests run, TestNG generates a default HTML report located in test-output. Open test-output/index.html in your browser to view the report.
-
 # Reporting with Allure 
 To enable reporting with Allure:
 
-Add the Allure Maven dependency to pom.xml.
+## Add the Allure Maven dependency to pom.xml.
 Run tests with Allure reporting enabled:
 bash
 Copy code
 mvn clean test
 mvn allure:report
-View the report in your browser:
+## View the report in your browser:
 bash
 Copy code
 allure serve target/allure-results
